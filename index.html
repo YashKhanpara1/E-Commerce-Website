@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Be Herbal</title>
+
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/> -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Start -->
+
+    <header class="header">
+
+        <a href="#" class="logo"> <i class="fas fa-shopping-basket"></i> Be Herbal </a>
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#features">features</a>
+            <a href="#products">products</a>
+            <a href="#categories">categories</a>
+            <a href="#review">review</a>
+            <a href="#blogs">blogs</a>
+        </nav>
+
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <div class="fas fa-user" id="login-btn"></div>
+        </div>
+
+        <form action="" class="search-form">
+            <input type="search" id="search-box" placeholder="search here..." onkeyup="search()">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+        <!-- <div class="container">
+            <header>
+                <h1>Your Shopping Cart</h1>
+                <div class="shopping">
+                    <img src="image/shopping.svg">
+                    <span class="quantity">0</span>
+                </div>
+            </header>
+    
+            <div class="list">
+              
+            </div>
+        </div>
+        <div class="card">
+            <h1>Card</h1>
+            <ul class="listCard">
+            </ul>
+            <div class="checkOut">
+                <div class="total">0</div>
+                <div class="closeShopping">Close</div>
+            </div>
+        </div> -->
+
+         <div class="shopping-cart">
+            <div class="box">
+               <i class="fas fa-trash"></i>
+               <img src="Img\Tea.png" alt="">
+                <div class="content">
+                    <h3>Tea</h3>
+                    <span class="price">₹350/-</span>
+                    <span class="quantity">qty : 1</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="Img\Coffee.png" alt="">
+                <div class="content">
+                    <h3>Coffee</h3>
+                    <span class="price">₹100/-</span>
+                    <span class="quantity">qty : 1</span>
+                </div>
+            </div>
+            
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="Img\Soap.png" alt="">
+                <div class="content">
+                    <h3>Soap</h3>
+                    <span class="price">₹200/-</span>
+                    <span class="quantity">qty : 1</span>
+                </div>
+            </div>
+            <div class="total"> total : ₹650/- </div>
+            <a href="#" class="btn">checkout</a>
+        </div>
+
+        <form action="" class="login-form">
+            <h3>login now</h3>
+            <input type="email" placeholder="your email" class="box">
+            <input type="password" placeholder="your password" class="box">
+            <p>forget your password <a href="#">click here</a></p>
+            <p>don't have an account <a href="signup pg.html">create now</a></p>
+            <input type="submit" value="login now" class="btn">
+        </form>
+        
+    </header>
+
+    <!-- Header End -->
+
+<!-- Home section Starts -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>Healhty and <span>organic</span> products for you </h3>
+        <p>Embrace Nature's Healing Power: Discover a Range of Herbal and Organic Products for a Holistic 
+            Wellness Journey. Unveil the Magic of Natural Remedies for a Healthier and Balanced Life.</p>
+        <a href="#products" class="btn">shop Now</a>
+    </div>
+
+</section>
+
+<!-- Home section Ends -->
+
+<!-- features section Starts -->
+
+<section class="features" id="features">
+
+    <h1 class="heading"> our <span>features</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="Img/Features1.png" alt="">
+            <h3>best and organic</h3>
+            <p>The best organic products offer a harmonious blend of nature and quality.
+                They're free from synthetic additives, promoting a healthier lifestyle while
+                supporting sustainable practices. A natural path to well-being.</p>
+            <a href="https://orco.in/blogs/blog/why-spices-should-be-added-to-our-diet" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="Img/Features2.png" alt="">
+            <h3>free delivery</h3>
+            <p>Enjoy the convenience of free delivery, saving both time and money. With this service, your desired 
+                products are brought right to your doorstep, enhancing your shopping experience and simplifying your life.</p>
+            <a href="https://www.invespcro.com/blog/free-delivery-marketing/" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="Img/Features3.png" alt="">
+            <h3>easy payments</h3>
+            <p>Simplify your transactions with easy payments. Seamlessly complete your purchases through a variety of hassle-free
+               payment methods, ensuring a smooth and secure checkout process that enhances your shopping journey.</p>
+            <a href="https://social-innovation.hitachi/en-in/knowledge-hub/hitachi-voice/digital-payments-revolution/" class="btn">read more</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- features section Ends -->
+
+<!-- Products section Starts -->
+
+<section class="products" id="products">
+
+    <h1 class="heading"> our <span>products</span> </h1>
+
+    <div class="swiper product-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <img src="Img/Product1.png" alt="">
+                <h3>Soap</h3>
+                <div class="price"> ₹75/- </div>
+                <div class="stars">
+                    <i class="fas-fa-star"></i>
+                    <i class="fas-fa-star"></i>
+                    <i class="fas-fa-star"></i>
+                    <i class="fas-fa-star"></i>
+                    <i class="fas-fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="Img/Product2.png" alt="">
+                <h3>Facewash</h3>
+                <div class="price"> ₹149/- </div>
+                <div class="stars">
+                    <i class="fas-fa-star"></i>
+                    <i class="fas-fa-star"></i>
+                    <i class="fas-fa-star"></i>
+                    <i class="fas-fa-star"></i>
+                    <i class="fas-fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="Img/Product3.png" alt="">
+                <h3>serum</h3>
+                <div class="price"> ₹249/- </div>
+                <div class="stars">
+                    <i class="fas-fa-star"></i>
+                    <i class="fas-fa-star"></i>
+                    <i class="fas-fa-star"></i>
+                    <i class="fas-fa-star"></i>
+                    <i class="fas-fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="Img/Product4.png" alt="">
+                <h3>Hair Oil</h3>
+                <div class="price"> ₹385/- </div>
+                <div class="stars">
+                    <i class="fas-fa-star"></i>
+                    <i class="fas-fa-star"></i>
+                    <i class="fas-fa-star"></i>
+                    <i class="fas-fa-star"></i>
+                    <i class="fas-fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="swiper product-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <img src="Img/Product5.png" alt="">
+                <h3>Hand Sanitizer</h3>
+                <div class="price"> ₹150/- </div>
+                <div class="stars">
+                    <i class="fas-fa-star"></i>
+                    <i class="fas-fa-star"></i>
+                    <i class="fas-fa-star"></i>
+                    <i class="fas-fa-star"></i>
+                    <i class="fas-fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="Img/Product6.png" alt="">
+                <h3>Diabetic Cookies</h3>
+                <div class="price"> ₹449/- </div>
+                <div class="stars">
+                    <i class="fas-fa-star"></i>
+                    <i class="fas-fa-star"></i>
+                    <i class="fas-fa-star"></i>
+                    <i class="fas-fa-star"></i>
+                    <i class="fas-fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="Img/Product7.png" alt="">
+                <h3>Fresh Organic Honey</h3>
+                <div class="price"> ₹249/- </div>
+                <div class="stars">
+                    <i class="fas-fa-star"></i>
+                    <i class="fas-fa-star"></i>
+                    <i class="fas-fa-star"></i>
+                    <i class="fas-fa-star"></i>
+                    <i class="fas-fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="Img/Product8.png" alt="">
+                <h3>Organic Face Scrub</h3>
+                <div class="price"> ₹400/- </div>
+                <div class="stars">
+                    <i class="fas-fa-star"></i>
+                    <i class="fas-fa-star"></i>
+                    <i class="fas-fa-star"></i>
+                    <i class="fas-fa-star"></i>
+                    <i class="fas-fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Products section Ends -->
+
+<!-- categories section Starts -->
+
+<section class="categories" id="categories">
+
+    <h1 class="heading"> product <span>categories</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="Img/Product6.png" alt="">
+            <h3>Diabetic Cookies</h3>
+            <p>upto 15% off</p>
+            <a href="#products" class="btn">shop now</a>
+        </div>
+
+        <div class="box">
+            <img src="Img/Product8.png" alt="">
+            <h3>Face Scrub</h3>
+            <p>upto 10% off</p>
+            <a href="#products" class="btn">shop now</a>
+        </div>
+
+        <div class="box">
+            <img src="Img/Product4.png" alt="">
+            <h3>Hair Oil</h3>
+            <p>upto 45% off</p>
+            <a href="#products" class="btn">shop now</a>
+        </div>
+
+        <div class="box">
+            <img src="Img/Product7.png" alt="">
+            <h3>Honey</h3>
+            <p>upto 5% off</p>
+            <a href="#products" class="btn">shop now</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- categories section Ends -->
+
+<!-- review section Starts -->
+
+<section class="review" id="review">
+
+    <h1 class="heading"> customer's <span>review</span> </h1>
+    <div class="swiper review-slider">
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <img src="Img/Review1.png" alt="">
+                <p>Refreshing blend, nature's cleanse. Delicate on skin, invigorating aroma. Gently 
+                    purifies, leaves a radiant, balanced glow. Must try</p>
+                <h3>Oliver</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star"></i>  <!-- For Full Star-->
+                    <i class="fas fa-star-half-alt"></i>  <!-- For Half Star-->
+                    <i class="fa-regular fa-star"></i>  <!-- For Empty Star-->
+                </div>
+            </div>
+            
+            <div class="swiper-slide box">
+                <img src="Img/Review2.png" alt="">
+                <p>Infused with botanical essence. Rich flavor honey, 
+                    holistic nourishment. Delightful blend of taste and wellness.</p>
+                <h3>Max</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="Img/Review3.png" alt="">
+                <p>Nature's purity in a Soap. Aromatic and gentle. Cleanses with botanical care. 
+                    Leaves skin refreshed, subtly fragrant.</p>
+                <h3>Sofia</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="Img/Review4.png" alt="">
+                <p>Nature's exfoliation. Delicate yet effective. Gently buffs away dullness.
+                    Reveals radiant skin, environmentally conscious self-care.</p>
+                <h3>David</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- review section Ends -->
+
+<!--Section Title Start-->
+<!-- <div class="col-12 col-custom">
+    <div class="section-title text-center mb-30">
+        <h3 class="section-title-3">Deal of The Day</h3>
+    </div>
+</div>
+<!--Section Title End-->
+</div>
+<div class="row">
+<!--Countdown Start-->
+<div class="col-12 col-custom">
+    <div class="countdown-area">
+        <div class="countdown-wrapper d-flex justify-content-center" data-countdown="2023/10/24"></div>
+    </div>
+</div> -->
+<!--Countdown End-->
+
+<!-- blogs section Starts -->
+
+<section class="blogs" id="blogs">
+    
+    <h1 class="heading"> Our <span> Blogs </span></h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="Img/Blog1.png" alt="">
+            <div class="content">
+                <div class="icons">
+                    <a href="#"> <i class="fas fa-user"></i> by user </a>
+                    <a href="#"> <i class="fas fa-calendar"></i> 25th june, 2023 </a>
+                </div>
+                <h3>Fresh and Organic Honey</h3>
+                <p>As they say, nothing can beat nature. With many people turning vegan,organic products 
+                    are the new definition of modern living. Organic products are healthier, fresher, and richer in taste. </p>
+                <a href="https://www.organictattva.com/5-health-benefits-of-organic-honey-for-immunity" class="btn">read more</a>
+            </div>
+        </div>
+ 
+        <div class="box">
+            <img src="Img/Blog2.png" alt="">
+            <div class="content">
+                <div class="icons">
+                    <a href="#"> <i class="fas fa-user"></i> by user </a>
+                    <a href="#"> <i class="fas fa-calendar"></i> 10th july, 2023 </a>
+                </div>
+                <h3>Psyllium husk</h3>
+                <p>Commonly found in the fields of Gujarat. Psyllium husk has a variety of health benefits that we’ve 
+                     known about for a long time. It’s a common ingredient used in ayurvedic products, to promote wholesome 
+                     healing.</p>
+                <a href="https://www.organictattva.com/5-essential-nutritional-benefits-of-psyllium-husk" class="btn">read more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="Img/Blog3.png" alt="">
+            <div class="content">
+                <div class="icons">
+                    <a href="#"> <i class="fas fa-user"></i> by user </a>
+                    <a href="#"> <i class="fas fa-calendar"></i> 10th november, 2023 </a>
+                </div>
+                <h3>Black Salt</h3>
+                <p>Choosing black salt may have several potential health benefits. The black salt is a rich source of 
+                    calcium and iron. One serving of Natural Black Salt contains 0g sugar, 0g trans fat and 0mg cholesterol.</p>
+                <a href="https://www.organictattva.com/is-black-salt-better-than-regular-salt" class="btn">read more</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- blogs section Ends -->
+
+<!-- footer section Starts -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3> Be Herbal <i class="fas fa-shopping-basket"></i> </h3>
+            <p>Be Herbal is a haven for nature enthusiasts. With a user-friendly interface, it's a seamless journey to discover organic products.</p>
+            <div class="share">
+                <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
+                <a href="https://twitter.com/" class="fab fa-twitter"></a>
+                <a href="https://www.instagram.com/" class="fab fa-instagram"></a>
+                <a href="https://www.linkedin.com/" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#"  class="links"> <i class="fas fa-phone"></i> +91 1234567890 </a>
+            <!-- <a href="tel:555-555-5555">555-555-5555</a> -->
+            <a href="#"  class="links"> <i class="fas fa-phone"></i> +91 5372649380 </a>
+            <a href="https://www.gmail.com/"  class="links"> <i class="fas fa-envelope"></i> yashkhanpara981@gmail.com </a>
+            <a href="https://www.google.com/maps/@19.308071,72.8517216,20.7z?entry=ttu"  class="links"> <i class="fas fa-map-marker-alt"></i> mumbai, india - 401101 </a>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#home"  class="links"> <i class="fas fa-arrow-right"></i> home </a>
+            <a href="#features"  class="links"> <i class="fas fa-arrow-right"></i> features </a>
+            <a href="#products"  class="links"> <i class="fas fa-arrow-right"></i> products </a>
+            <a href="#categories"  class="links"> <i class="fas fa-arrow-right"></i> categories </a>
+            <a href="#review"  class="links"> <i class="fas fa-arrow-right"></i> review </a>
+            <a href="#blogs"  class="links"> <i class="fas fa-arrow-right"></i> blogs </a>
+        </div>
+
+        <div class="box">
+            <h3>newsletter</h3>
+            <p>subscribe for latest updates</p>
+            <input type="email" placeholder="your email" class="email">
+            <input type="submit" value="subscribe" class="btn">
+            <!-- <img src="Img/Payment.png" class="payment-img"> -->
+        </div>
+
+    </div>
+
+    <!-- <div class="credit"> created by <span> Yash Khanpara </span> | all rights reseved </div> -->
+    <div class="credit"> &copy; 2023 <span> Yash Khanpara </span> </div>
+
+</section>
+
+<!-- footer section Ends -->
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script> -->
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
